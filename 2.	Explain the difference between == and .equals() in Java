@@ -1,0 +1,16 @@
+
+public class ComparisonExample {
+    public static void main(String[] args) {
+        // Primitive comparison
+        int a = 5;
+        int b = 5;
+        System.out.println("a == b: " + (a == b)); // true
+        // Object reference comparison with Strings
+        String s1 = new String("Hello");
+        String s2 = new String("Hello");
+        String s3 = s1;
+        System.out.println("s1 == s2: " + (s1 == s2));       // false (different objects)
+        System.out.println("s1.equals(s2): " + s1.equals(s2)); // true (same content)
+        System.out.println("s1 == s3: " + (s1 == s3));       // true (same reference)
+    }
+}   
