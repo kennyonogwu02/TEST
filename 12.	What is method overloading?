@@ -1,0 +1,16 @@
+public class Greet {
+    // Method with no parameters
+    public void sayHello() {
+        System.out.println("Hello!");
+    }
+
+    // Overloaded method with one parameter
+    public void sayHello(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+    public static void main(String[] args) {
+        Greet greet = new Greet();
+        greet.sayHello();           // Calls method without parameter
+        greet.sayHello("Kenneth");  // Calls overloaded method with parameter
+    }
+}
